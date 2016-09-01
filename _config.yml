@@ -24,7 +24,7 @@ defaults:
   values:
     layout: song
     permalink: "/songs/:title"
-    audio_file:
+    audio_file: 
     song_title: ''
     album_title: ''
     artist_name: ''
