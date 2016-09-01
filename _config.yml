@@ -20,6 +20,16 @@ defaults:
     permalink: "/posts/:title/"
 - scope:
     path: ''
+    type: songs
+  values:
+    layout: song
+    permalink: "/songs/:title"
+    audio_file:
+    song_title: ''
+    album_title: ''
+    artist_name: ''
+- scope:
+    path: ''
     type: pages
   values:
     layout: page
