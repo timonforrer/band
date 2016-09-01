@@ -8,7 +8,6 @@ collections:
   songs:
     title: Songs
     output: true
-    permalink: "/songs/:title"
   uploads:
     title: Uploads
     output: true
