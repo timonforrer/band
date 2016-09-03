@@ -17,6 +17,16 @@ collections:
 defaults:
 - scope:
     path: ''
+    type: events
+  values:
+    layout: event
+    permalink: "/events/:title"
+    location: ''
+    date: ''
+    link: ''
+    state: ''
+- scope:
+    path: ''
     type: posts
   values:
     layout: post
@@ -31,16 +41,6 @@ defaults:
     audio_file: 
     album_title: ''
     artist_name: ''
-- scope:
-    path: ''
-    type: events
-  values:
-    layout: event
-    permalink: "/events/:title"
-    location: ''
-    date: ''
-    link: ''
-    state: ''
 - scope:
     path: ''
     type: pages
