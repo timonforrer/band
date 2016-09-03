@@ -29,9 +29,18 @@ defaults:
     permalink: "/songs/:title"
     artwork_image: 
     audio_file: 
-    song_title: ''
     album_title: ''
     artist_name: ''
+- scope:
+    path: ''
+    type: events
+  values:
+    layout: event
+    permalink: "/events/:title"
+    location: ''
+    date: ''
+    link: ''
+    state: ''
 - scope:
     path: ''
     type: pages
