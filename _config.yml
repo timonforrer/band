@@ -34,7 +34,7 @@ defaults:
   values:
     layout: member
     permalink: "/members/:title"
-    function: ''
+    nickname: ''
     facebook_link: ''
     mail_address: ''
 - scope:
