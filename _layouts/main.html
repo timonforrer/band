@@ -6,20 +6,20 @@
     <head>
         <title>{{page.title}}</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="{{baseurl}}/css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="apple-touch-startup-image" href="manifest/icon192x192.png">
-        <link rel="manifest" href="manifest/manifest.json">
-        <link rel="icon" sizes="192x192" href="manifest/icon192x192.png">
-        <link rel="apple-touch-icon" href="manifest/icon48x48.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="manifest/icon72x72.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="manifest/icon144x144.png">
-        <link rel="apple-touch-icon" sizes="192x192" href="manifest/icon192x192.png">
+        <link rel="apple-touch-startup-image" href="{{baseurl}}/manifest/icon192x192.png">
+        <link rel="manifest" href="{{baseurl}}/manifest/manifest.json">
+        <link rel="icon" sizes="192x192" href="{{baseurl}}/manifest/icon192x192.png">
+        <link rel="apple-touch-icon" href="{{baseurl}}/manifest/icon48x48.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{baseurl}}/manifest/icon72x72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="{{baseurl}}/manifest/icon144x144.png">
+        <link rel="apple-touch-icon" sizes="192x192" href="{{baseurl}}/manifest/icon192x192.png">
     </head>
     <body>
         
@@ -30,8 +30,8 @@
         {% include footer.html %}
         
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script type="text/javascript" src="js/scripts.js"></script>
-        <script type="text/javascript" src="js/service_worker.js"></script>
+        <script type="text/javascript" src="{{baseurl}}/js/scripts.js"></script>
+        <script type="text/javascript" src="{{baseurl}}/js/service_worker.js"></script>
         
         {% include js_deactivated.html %}
         

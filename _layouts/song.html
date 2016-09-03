@@ -1,0 +1,29 @@
+---
+layout: detailpage
+---
+
+<div class="width_wrapper">
+    
+    <h1>{{content}}</h1>
+
+    <div class="music">
+        <!-- Loop through songs -->
+        {% for song in site.songs %}
+        <div class="overview material_shadow">
+            <img class="album_cover" src="{{ song.artwork_image }}">
+            <div class="music-info">
+                <p class="song music-p">{{ song.title }}</p>
+                <p class="album music-p">{{ song.album_title }}</p>
+                <p class="artist music-p">{{ song.artist_name }}</p>
+            </div>
+        </div>
+        <div class="detailview material_shadow" style="overflow:visible">
+            <audio controls>
+                <source src="{{ song.audio_file }}">
+            </audio>
+            <a href="{{ song.audio_file }}" download><i class="material-icons download">file_download</i>  </a>
+        </div>
+        {% endfor %}
+    </div>
+    
+</div>

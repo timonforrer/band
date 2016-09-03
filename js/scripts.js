@@ -40,16 +40,6 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
-// no idea what this is..
-/*
-function addActive(elem) {
-    var a = document.getElementsByIdName('mobileAnchor')
-    for (i = 0; i < mobileAnchor.length; i++) {
-        mobileAnchor[i].classList.remove('active')
-    }
-    elem.classList.add('active');
-}*/
-
 
 // *** Accordion Script *** //
 
@@ -66,22 +56,11 @@ $(function() {
 
 // Show tab-content when tab-button is clicked
 $(document).ready(function(){
-	// everything tabOne
 	$('.tabs1').click(function(){
 		var tab_id = $(this).attr('data-tab');
 
 		$('.tabs1').removeClass('current');
 		$('.tab-content1').removeClass('current');
-
-		$(this).addClass('current');
-		$("#"+tab_id).addClass('current');
-	})
-    // everythin tabTwo
-    $('.tabs2').click(function(){
-		var tab_id = $(this).attr('data-tab');
-
-		$('.tabs2').removeClass('current');
-		$('.tab-content2').removeClass('current');
 
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');

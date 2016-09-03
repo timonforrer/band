@@ -3,20 +3,20 @@
     <head>
         <title>Band Test Page</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="/css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="apple-touch-startup-image" href="manifest/icon192x192.png">
-        <link rel="manifest" href="manifest/manifest.json">
-        <link rel="icon" sizes="192x192" href="manifest/icon192x192.png">
-        <link rel="apple-touch-icon" href="manifest/icon48x48.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="manifest/icon72x72.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="manifest/icon144x144.png">
-        <link rel="apple-touch-icon" sizes="192x192" href="manifest/icon192x192.png">
+        <link rel="apple-touch-startup-image" href="/manifest/icon192x192.png">
+        <link rel="manifest" href="/manifest/manifest.json">
+        <link rel="icon" sizes="192x192" href="/manifest/icon192x192.png">
+        <link rel="apple-touch-icon" href="/manifest/icon48x48.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/manifest/icon72x72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/manifest/icon144x144.png">
+        <link rel="apple-touch-icon" sizes="192x192" href="/manifest/icon192x192.png">
     </head>
     <body>
         
@@ -89,9 +89,10 @@
                 <a href="" download><i class="material-icons download">file_download</i>  </a>
             </div>
             
-            
         </div>
+        <button class="btn" type="button"><a href="pages/songs"><span>Alle Songs</span></a></button>
     </div>
+    
     <!-- Page Two (Events) -->
     <div id="page_two" class="main-area section">
         <h1>Events</h1>
@@ -162,197 +163,16 @@
         </div>
     </div>
     
-    <!-- Page Three (Band) 
-            <div id="page_three" class="main-area section">
-                <h1>Band</h1>
-                <div class="material_shadow">
-                    <div class="tab-menu">
-                        <div class="tabs2 current" data-tab="tab-21"><a>Toni</a></div>
-                        <div class="tabs2" data-tab="tab-22">Merlin
-                            <a></a>
-                        </div>
-                        <div class="tabs2" data-tab="tab-23">Julian
-                            <a></a>
-                        </div>
-                        <div class="tabs2" data-tab="tab-24">Timon
-                            <a></a>
-                        </div>
-                    </div>
-                    <!-- Contact Tab Toni 
-                    <div id="tab-21" class="tab-content2 current">
-                        <div class="contact-image" id="tonimaccaroni"></div>
-                        <div class="contact-text-container">
-                            <h1>Toni (Gesang)</h1>
-                            <h4>Tonimacaroni</h4>
-                            <!-- Social Media Icons 
-                            <div class="social">
-                                <a target="_blank" href="https://www.facebook.com/toni.hxdlol.7">
-                                    <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="141.73px" height="141.73px" viewBox="0 0 141.73 141.73" enable-background="new 0 0 141.73 141.73" xml:space="preserve">
-                                        <g>
-                                            <path fill="#FFFFFF" d="M71.013,141.912c-39.102,0-70.912-31.811-70.912-70.912S31.911,0.088,71.013,0.088
-                                                    c39.099,0,70.912,31.811,70.912,70.912S110.111,141.912,71.013,141.912z M71.013,3.548C33.82,3.548,3.561,33.806,3.561,71
-                                                    c0,37.192,30.259,67.452,67.452,67.452c37.195,0,67.452-30.26,67.452-67.452C138.465,33.806,108.208,3.548,71.013,3.548z" />
-                                            <path fill="#FFFFFF" d="M55.994,60.458h6.436v-6.255c0-2.76,0.069-7.015,2.072-9.649c2.11-2.791,5.008-4.687,9.992-4.687
-                                                    c8.122,0,11.54,1.158,11.54,1.158l-1.609,9.537c0,0-2.681-0.777-5.186-0.777c-2.504,0-4.745,0.897-4.745,3.4v7.273H84.76
-                                                    l-0.717,9.314h-9.549v32.357H62.43V69.771h-6.436V60.458z" /> </g>
-                                    </svg>
-                                </a>
-                                <a href="mailto:timon.forrer@gmail.com">
-                                    <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="141.73px" height="141.73px" viewBox="0 0 141.73 141.73" enable-background="new 0 0 141.73 141.73" xml:space="preserve">
-                                        <g>
-                                            <path fill="#FFFFFF" d="M71.013,141.912c-39.102,0-70.912-31.811-70.912-70.912S31.911,0.088,71.013,0.088
-                                                c39.099,0,70.912,31.811,70.912,70.912S110.111,141.912,71.013,141.912z M71.013,3.548C33.82,3.548,3.561,33.806,3.561,71
-                                                c0,37.192,30.259,67.452,67.452,67.452c37.195,0,67.452-30.26,67.452-67.452C138.465,33.806,108.208,3.548,71.013,3.548z" /> </g>
-                                        <path fill="#FFFFFF" d="M95.016,46.995H47.004c-3.307,0-5.975,2.696-5.975,6.004L41,88.983c0,3.326,2.697,6.023,6.004,6.023h48.012
-                                            c3.287,0,5.984-2.697,5.984-6.023V52.999C101,49.691,98.303,46.995,95.016,46.995z M95.016,58.983L71,73.983l-23.996-15v-5.984
-                                            l23.996,15l24.016-15V58.983z" /> </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Contact Tab Merlin 
-                    <div id="tab-22" class="tab-content2">
-                        <div class="contact-image" id="merlin"></div>
-                        <div class="contact-text-container">
-                            <h1>Merlin Eichenberger (Gitarre)</h1>
-                            <h4>The Guitar-Wizzard</h4>
-                            <!-- Social Media Icons 
-                            <div class="social">
-                                <a target="_blank" href="https://www.facebook.com/merlin.eichenberger">
-                                    <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="141.73px" height="141.73px" viewBox="0 0 141.73 141.73" enable-background="new 0 0 141.73 141.73" xml:space="preserve">
-                                        <g>
-                                            <path fill="#FFFFFF" d="M71.013,141.912c-39.102,0-70.912-31.811-70.912-70.912S31.911,0.088,71.013,0.088
-                                                    c39.099,0,70.912,31.811,70.912,70.912S110.111,141.912,71.013,141.912z M71.013,3.548C33.82,3.548,3.561,33.806,3.561,71
-                                                    c0,37.192,30.259,67.452,67.452,67.452c37.195,0,67.452-30.26,67.452-67.452C138.465,33.806,108.208,3.548,71.013,3.548z" />
-                                            <path fill="#FFFFFF" d="M55.994,60.458h6.436v-6.255c0-2.76,0.069-7.015,2.072-9.649c2.11-2.791,5.008-4.687,9.992-4.687
-                                                    c8.122,0,11.54,1.158,11.54,1.158l-1.609,9.537c0,0-2.681-0.777-5.186-0.777c-2.504,0-4.745,0.897-4.745,3.4v7.273H84.76
-                                                    l-0.717,9.314h-9.549v32.357H62.43V69.771h-6.436V60.458z" /> </g>
-                                    </svg>
-                                </a>
-                                <a href="mailto:timon.forrer@gmail.com">
-                                    <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="141.73px" height="141.73px" viewBox="0 0 141.73 141.73" enable-background="new 0 0 141.73 141.73" xml:space="preserve">
-                                        <g>
-                                            <path fill="#FFFFFF" d="M71.013,141.912c-39.102,0-70.912-31.811-70.912-70.912S31.911,0.088,71.013,0.088
-                                                c39.099,0,70.912,31.811,70.912,70.912S110.111,141.912,71.013,141.912z M71.013,3.548C33.82,3.548,3.561,33.806,3.561,71
-                                                c0,37.192,30.259,67.452,67.452,67.452c37.195,0,67.452-30.26,67.452-67.452C138.465,33.806,108.208,3.548,71.013,3.548z" /> </g>
-                                        <path fill="#FFFFFF" d="M95.016,46.995H47.004c-3.307,0-5.975,2.696-5.975,6.004L41,88.983c0,3.326,2.697,6.023,6.004,6.023h48.012
-                                            c3.287,0,5.984-2.697,5.984-6.023V52.999C101,49.691,98.303,46.995,95.016,46.995z M95.016,58.983L71,73.983l-23.996-15v-5.984
-                                            l23.996,15l24.016-15V58.983z" /> </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Contact Tab Julian 
-                    <div id="tab-23" class="tab-content2">
-                        <div class="contact-image" id="julian"></div>
-                        <div class="contact-text-container">
-                            <h1>Julian Stein (Bass)</h1>
-                            <h4>The J</h4>
-                            <!-- Social Media Icons 
-                            <div class="social">
-                                <a target="_blank" href="https://www.facebook.com/julian.stein.509">
-                                    <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="141.73px" height="141.73px" viewBox="0 0 141.73 141.73" enable-background="new 0 0 141.73 141.73" xml:space="preserve">
-                                        <g>
-                                            <path fill="#FFFFFF" d="M71.013,141.912c-39.102,0-70.912-31.811-70.912-70.912S31.911,0.088,71.013,0.088
-                                                    c39.099,0,70.912,31.811,70.912,70.912S110.111,141.912,71.013,141.912z M71.013,3.548C33.82,3.548,3.561,33.806,3.561,71
-                                                    c0,37.192,30.259,67.452,67.452,67.452c37.195,0,67.452-30.26,67.452-67.452C138.465,33.806,108.208,3.548,71.013,3.548z" />
-                                            <path fill="#FFFFFF" d="M55.994,60.458h6.436v-6.255c0-2.76,0.069-7.015,2.072-9.649c2.11-2.791,5.008-4.687,9.992-4.687
-                                                    c8.122,0,11.54,1.158,11.54,1.158l-1.609,9.537c0,0-2.681-0.777-5.186-0.777c-2.504,0-4.745,0.897-4.745,3.4v7.273H84.76
-                                                    l-0.717,9.314h-9.549v32.357H62.43V69.771h-6.436V60.458z" /> </g>
-                                    </svg>
-                                </a>
-                                <a href="mailto:timon.forrer@gmail.com">
-                                    <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="141.73px" height="141.73px" viewBox="0 0 141.73 141.73" enable-background="new 0 0 141.73 141.73" xml:space="preserve">
-                                        <g>
-                                            <path fill="#FFFFFF" d="M71.013,141.912c-39.102,0-70.912-31.811-70.912-70.912S31.911,0.088,71.013,0.088
-                                                c39.099,0,70.912,31.811,70.912,70.912S110.111,141.912,71.013,141.912z M71.013,3.548C33.82,3.548,3.561,33.806,3.561,71
-                                                c0,37.192,30.259,67.452,67.452,67.452c37.195,0,67.452-30.26,67.452-67.452C138.465,33.806,108.208,3.548,71.013,3.548z" /> </g>
-                                        <path fill="#FFFFFF" d="M95.016,46.995H47.004c-3.307,0-5.975,2.696-5.975,6.004L41,88.983c0,3.326,2.697,6.023,6.004,6.023h48.012
-                                            c3.287,0,5.984-2.697,5.984-6.023V52.999C101,49.691,98.303,46.995,95.016,46.995z M95.016,58.983L71,73.983l-23.996-15v-5.984
-                                            l23.996,15l24.016-15V58.983z" /> </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Contact Tab Timon 
-                    <div id="tab-24" class="tab-content2">
-                        <div class="contact-image" style="background-position:center" id="timon"></div>
-                        <div class="contact-text-container">
-                            <h1>Timon Forrer (Schlagzeug)</h1>
-                            <h4>The Turtle</h4>
-                            <!-- Social Media Icons 
-                            <div class="social">
-                                <a target="_blank" href="https://www.facebook.com/timon.forrer.1">
-                                    <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="141.73px" height="141.73px" viewBox="0 0 141.73 141.73" enable-background="new 0 0 141.73 141.73" xml:space="preserve">
-                                        <g>
-                                            <path fill="#FFFFFF" d="M71.013,141.912c-39.102,0-70.912-31.811-70.912-70.912S31.911,0.088,71.013,0.088
-                                                    c39.099,0,70.912,31.811,70.912,70.912S110.111,141.912,71.013,141.912z M71.013,3.548C33.82,3.548,3.561,33.806,3.561,71
-                                                    c0,37.192,30.259,67.452,67.452,67.452c37.195,0,67.452-30.26,67.452-67.452C138.465,33.806,108.208,3.548,71.013,3.548z" />
-                                            <path fill="#FFFFFF" d="M55.994,60.458h6.436v-6.255c0-2.76,0.069-7.015,2.072-9.649c2.11-2.791,5.008-4.687,9.992-4.687
-                                                    c8.122,0,11.54,1.158,11.54,1.158l-1.609,9.537c0,0-2.681-0.777-5.186-0.777c-2.504,0-4.745,0.897-4.745,3.4v7.273H84.76
-                                                    l-0.717,9.314h-9.549v32.357H62.43V69.771h-6.436V60.458z" /> </g>
-                                    </svg>
-                                </a>
-                                <a href="mailto:timon.forrer@gmail.com">
-                                    <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="141.73px" height="141.73px" viewBox="0 0 141.73 141.73" enable-background="new 0 0 141.73 141.73" xml:space="preserve">
-                                        <g>
-                                            <path fill="#FFFFFF" d="M71.013,141.912c-39.102,0-70.912-31.811-70.912-70.912S31.911,0.088,71.013,0.088
-                                                c39.099,0,70.912,31.811,70.912,70.912S110.111,141.912,71.013,141.912z M71.013,3.548C33.82,3.548,3.561,33.806,3.561,71
-                                                c0,37.192,30.259,67.452,67.452,67.452c37.195,0,67.452-30.26,67.452-67.452C138.465,33.806,108.208,3.548,71.013,3.548z" /> </g>
-                                        <path fill="#FFFFFF" d="M95.016,46.995H47.004c-3.307,0-5.975,2.696-5.975,6.004L41,88.983c0,3.326,2.697,6.023,6.004,6.023h48.012
-                                            c3.287,0,5.984-2.697,5.984-6.023V52.999C101,49.691,98.303,46.995,95.016,46.995z M95.016,58.983L71,73.983l-23.996-15v-5.984
-                                            l23.996,15l24.016-15V58.983z" /> </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Page Four (Our Manager) 
-            <div id="page_four" class="main-area sectionExtended">
-                <h1>Contact</h1>
-                <div class="material_shadow contact_tab_container-teddy">
-                    <!-- Contact Tab Teddy 
-                    <div class="contact-teddy ">
-                        <div class="contact-image" id="teddy"></div>
-                        <div class="contact-text-container">
-                            <h1>Teddy (Manager)</h1>
-                            <h2>Beruflich</h2>
-                            <ul>
-                                <li>Kaufmännische Berufschule</li>
-                                <li>10 Jahre IT-Entwicklungsleiter</li>
-                                <li>Seit 20 Jahren Geschäftsführer <a href="http://www.fahnenfabrik.ch/">Fahnenfabrik Sevelen AG</a></li>
-                            </ul>
-                            <!-- Social Media Icons 
-                            <div class="social">
-                                <a target="_blank" href="https://www.facebook.com/Teddy.Beinwil">
-                                    <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="141.73px" height="141.73px" viewBox="0 0 141.73 141.73" enable-background="new 0 0 141.73 141.73" xml:space="preserve">
-                                        <g>
-                                            <path fill="#FFFFFF" d="M71.013,141.912c-39.102,0-70.912-31.811-70.912-70.912S31.911,0.088,71.013,0.088
-                                                    c39.099,0,70.912,31.811,70.912,70.912S110.111,141.912,71.013,141.912z M71.013,3.548C33.82,3.548,3.561,33.806,3.561,71
-                                                    c0,37.192,30.259,67.452,67.452,67.452c37.195,0,67.452-30.26,67.452-67.452C138.465,33.806,108.208,3.548,71.013,3.548z" />
-                                            <path fill="#FFFFFF" d="M55.994,60.458h6.436v-6.255c0-2.76,0.069-7.015,2.072-9.649c2.11-2.791,5.008-4.687,9.992-4.687
-                                                    c8.122,0,11.54,1.158,11.54,1.158l-1.609,9.537c0,0-2.681-0.777-5.186-0.777c-2.504,0-4.745,0.897-4.745,3.4v7.273H84.76
-                                                    l-0.717,9.314h-9.549v32.357H62.43V69.771h-6.436V60.458z" /> </g>
-                                    </svg>
-                                </a>
-                                <a href="mailto:info@voltagearc.com ">
-                                    <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="141.73px" height="141.73px" viewBox="0 0 141.73 141.73" enable-background="new 0 0 141.73 141.73" xml:space="preserve">
-                                        <g>
-                                            <path fill="#FFFFFF" d="M71.013,141.912c-39.102,0-70.912-31.811-70.912-70.912S31.911,0.088,71.013,0.088
-                                                c39.099,0,70.912,31.811,70.912,70.912S110.111,141.912,71.013,141.912z M71.013,3.548C33.82,3.548,3.561,33.806,3.561,71
-                                                c0,37.192,30.259,67.452,67.452,67.452c37.195,0,67.452-30.26,67.452-67.452C138.465,33.806,108.208,3.548,71.013,3.548z" /> </g>
-                                        <path fill="#FFFFFF" d="M95.016,46.995H47.004c-3.307,0-5.975,2.696-5.975,6.004L41,88.983c0,3.326,2.697,6.023,6.004,6.023h48.012
-                                            c3.287,0,5.984-2.697,5.984-6.023V52.999C101,49.691,98.303,46.995,95.016,46.995z M95.016,58.983L71,73.983l-23.996-15v-5.984
-                                            l23.996,15l24.016-15V58.983z" /> </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Page Three (Band) -->
+    <div id="page_three" class="main-area section">
+        <h1>Band</h1>
     </div>
-</div>-->
-
+    
+    <!-- Page Four (Manager) -->
+    <div id="page_four" class="main-area section">
+        <h1>Contact</h1>
+    </div>
+</div>
 
         </main>
         
@@ -367,8 +187,8 @@
 </footer>
         
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script type="text/javascript" src="js/scripts.js"></script>
-        <script type="text/javascript" src="js/service_worker.js"></script>
+        <script type="text/javascript" src="/js/scripts.js"></script>
+        <script type="text/javascript" src="/js/service_worker.js"></script>
         
         <div id="js">
     <noscript>Javascript ist ausgeschaltet. Um die ganze Seite sehen zu können, müssen Sie Javascript <a href="http://enable-javascript.com/de/" target="_blank">aktivieren.</a></noscript>
