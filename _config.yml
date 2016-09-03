@@ -37,6 +37,7 @@ defaults:
     nickname: ''
     facebook_link: ''
     mail_address: ''
+    image: ''
 - scope:
     path: ''
     type: events
