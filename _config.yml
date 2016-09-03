@@ -2,14 +2,14 @@
 title: VA Webtest
 timezone: UTC
 collections:
+  songs:
+    title: Songs
+    output: true
   events:
     title: Events
     output: true
   posts:
     title: Posts
-    output: true
-  songs:
-    title: Songs
     output: true
   uploads:
     title: Uploads
