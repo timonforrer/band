@@ -17,6 +17,16 @@ collections:
 defaults:
 - scope:
     path: ''
+    type: events
+  values:
+    layout: event
+    permalink: "/events/:title"
+    location: ''
+    gig_date: ''
+    link: ''
+    state: ''
+- scope:
+    path: ''
     type: posts
   values:
     layout: post
