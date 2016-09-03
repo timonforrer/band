@@ -30,6 +30,15 @@ defaults:
     artist_name: ''
 - scope:
     path: ''
+    type: members
+  values:
+    layout: member
+    permalink: "/members/:title"
+    function: ''
+    facebook_link: ''
+    mail_address: ''
+- scope:
+    path: ''
     type: events
   values:
     layout: event
