@@ -53,51 +53,39 @@ layout: main
                         <th>Anlass</th>
                         <th>Ort</th>
                         <th>Datum</th>
-                            </tr>
-                            <tr>
-                                <td data-th="Anlass"><a href="http://www.ref-beinwil.ch/veranstaltung/2694" target="_blank">Summer Beach &amp; Fun</a></td>
-                                <td data-th="Ort">Badi, Beinwil am See AG</td>
-                                <td data-th="Datum">27. August 2016</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div id="tab-2" class="tab-content1">
-                        <table class="rwd-table">
-                            <tr>
-                                <th>Anlass</th>
-                                <th>Ort</th>
-                                <th>Datum</th>
-                            </tr>
-                            <tr>
-                                <td data-th="Anlass">Salzhaus, Brugg AG</td>
-                                <td data-th="Ort">72h Benefizkonzert</td>
-                                <td data-th="Datum">12. September 2015</td>
-                            </tr>
-                            <tr>
-                                <td data-th="Anlass">40 Jahre Musikschule</td>
-                                <td data-th="Ort">Saalbau, Reinach AG</td>
-                                <td data-th="Datum">28. März 2015</td>
-                            </tr>
-                            <tr>
-                                <td data-th="Anlass">Vorgruppe Weekend Warrior</td>
-                                <td data-th="Ort">Löwen, Pfäffikon LU</td>
-                                <td data-th="Datum">29. November 2015</td>
-                            </tr>
-                            <tr>
-                                <td data-th="Anlass">Metal Meltdown II</td>
-                                <td data-th="Ort">Picadilly, Brugg AG</td>
-                                <td data-th="Datum">10. Oktober 2015</td>
-                            </tr>
-                            <tr>
-                                <td data-th="Anlass">RJAW</td>
-                                <td data-th="Ort">KK3, Menziken AG</td>
-                                <td data-th="Datum">17. Oktober 2015</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+                    </tr>
+                    {% assign events = site.events | where:"state","upcoming" %}
+                    {% if events == "" %}<p>no events upcoming</p>{% endif %}
+                    {% for event in events %}
+                    <tr>
+                        <td data-th="Anlass"><a href="{{event.link}}" target="_blank">{{ event.title }}</a></td>
+                        <td data-th="Ort">{{ event.location }}</td>
+                        <td data-th="Datum">{{  }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
             </div>
-            <!-- Page Three (Band) 
+            <div id="tab-2" class="tab-content1">
+                <table class="rwd-table">
+                    <tr>
+                        <th>Anlass</th>
+                        <th>Ort</th>
+                        <th>Datum</th>
+                    </tr>
+                    {% assign events = site.events | where:"state","former" %}
+                    {% for event in events %}
+                    <tr>
+                        <td data-th="Anlass"><a href="{{event.link}}" target="_blank">{{event.title}}</a></td>
+                        <td data-th="Ort">{{event.location}}</td>
+                        <td data-th="Datum">{{event.gig_date | date: "%d. %B %Y" | replace:"January","Januar" | replace:"Februar","February" | replace:"March","März" | replace:"May","Mai" | replace:"June","Juni" | replace:"July","Juli" | replace:"October","Oktober" | replace:"December","Dezember" }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page Three (Band) 
             <div id="page_three" class="main-area section">
                 <h1>Band</h1>
                 <div class="material_shadow">
