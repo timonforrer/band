@@ -69,7 +69,6 @@ $(document).ready(function(){
 
 // Tabs nr. 2
 
-$(document).ready(function(){
 $('ul.tabs').each(function(){
   // For each set of tabs, we want to keep track of
   // which tab is active and its associated content
@@ -104,7 +103,6 @@ $('ul.tabs').each(function(){
     // Prevent the anchor's default click action
     e.preventDefault();
 	});
-});
 });
 
 // everything in its right place
