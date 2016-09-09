@@ -89,6 +89,17 @@ layout: main
     <!-- Page Three (Band) -->
     <div id="page_three" class="main-area section">
         <h1>Band</h1>
+        <div id="tabs">
+            <ul>
+                {% for member in site.members %}
+                <li><a href="#{{member.title}}">{ member.title}}</a></li>
+                {% endfor %}
+            </ul>
+            {% for member in site.members %}
+            <div id="{{member.title}}">
+                <p>{{member.title}}</p>
+            </div>
+        </div>
     </div>
     
     <!-- Page Four (Manager) -->
@@ -96,3 +107,9 @@ layout: main
         <h1>Contact</h1>
     </div>
 </div>
+
+<script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
