@@ -470,12 +470,17 @@ audio {
     height: 50px;
 }
 
-.tabs1 {
+.tabs1,
+.tabs2 {
     text-align: center;
 }
 
 .tabs1 {
     width: 50%;
+}
+
+.tabs2 {
+    width: 25%;
 }
 
 @-webkit-keyframes fadeIn {
@@ -516,12 +521,14 @@ audio {
     animation: fadeIn 1s;
 }
 
-.tabs1 a {
+.tabs1 a,
+.tabs2 a {
     line-height: 50px;
     cursor: default;
 }
 
-.tabs1.current {
+.tabs1.current,
+.tabs2.current {
     border-bottom: solid 3px;
     color: #fff;
 }
@@ -786,7 +793,8 @@ noscript {
         background-size: contain;
         background-repeat: no-repeat;
     }
-    .tabs1:hover {
+    .tabs1:hover,
+    .tabs2:hover {
         border-bottom: 3px solid;
     }
 }

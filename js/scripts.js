@@ -67,4 +67,16 @@ $(document).ready(function(){
 	})
 })
 
+$(document).ready(function(){
+	$('.tabs2').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('.tabs2').removeClass('current');
+		$('.tab-content2').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	})
+})
+
 // everything in its right place

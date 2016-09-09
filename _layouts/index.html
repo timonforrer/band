@@ -46,7 +46,7 @@ layout: main
         <div class="material_shadow tab_container">
             <div class="tab-menu">
                 <div class="tabs1 current" data-tab="upcoming"><a>Bevorstehend</a></div>
-                <div class="tabs1" data-tab="tab-2"><a>Vergangene</a></div>
+                <div class="tabs1" data-tab="former"><a>Vergangene</a></div>
             </div>
             <div id="upcoming" class="tab-content1 current">
                 <table class="rwd-table">
@@ -66,7 +66,7 @@ layout: main
                     {% endfor %}
                 </table>
             </div>
-            <div id="tab-2" class="tab-content1">
+            <div id="former" class="tab-content1">
                 <table class="rwd-table">
                     <tr>
                         <th>Anlass</th>
@@ -89,6 +89,20 @@ layout: main
     <!-- Page Three (Band) -->
     <div id="page_three" class="main-area section">
         <h1>Band</h1>
+        <div class="material_shadow tab_container">
+            <div class="tab-menu">
+                {% for member in site.members %}
+                <div class="tabs2 {% if forloop.first %} current {% endif %}" data-tab="{{member.title}}"><a>{{member.title}}</a></div>
+                {% endfor %}
+            </div>
+            {% for member in site.members %}
+            <div id="{{member.title}}" class="tab-content2 {% if forloop.first %} current {% endif %}">
+                {{member.title}}
+                {{member.nickname}}
+                <img height="300px" src="{{member.image}}">
+            </div>
+            {% endfor %}
+        </div>
     </div>
     
     <!-- Page Four (Manager) -->
