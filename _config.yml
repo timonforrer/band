@@ -35,6 +35,7 @@ defaults:
     layout: member
     permalink: "/members/:title"
     nickname: ''
+    function: ''
     facebook_link: ''
     mail_address: ''
     image: ''

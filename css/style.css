@@ -533,6 +533,28 @@ audio {
     color: #fff;
 }
 
+.social {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 10px 10px 0;
+}
+
+.social a svg {
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+svg path {
+    transition: 300ms ease;
+}
+
+svg:hover path {
+    fill: #FF5252;
+}
+
 footer {
     height: 100px;
     background-color: #424242;    
@@ -615,6 +637,58 @@ footer a:hover {
 
 noscript {
     line-height: 30px;
+}
+
+/* --- Contact Tab --- */
+
+.contact-text-container {
+    display: inline-block;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+.contact-text-container h1,
+.contact-text-container h2,
+.contact-text-container h3,
+.contact-text-container h4,
+.contact-text-container p,
+.contact-text-container li,
+.contact-text-container li a {
+    font-family: 'Lato', sans-serif;
+}
+
+.contact-text-container h1 {
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.5em;
+}
+
+.contact-text-container h4 {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/*#tonimaccaroni {
+    background-image: url(http://www.voltagearc.com/userfiles/image/upload/member/Toni%2095_75%20sw.jpg)
+}*/
+
+#merlin {
+    background-image: url(http://www.voltagearc.com/userfiles/image/upload/member/Merlin%2095_75%20sw.jpg)
+}
+
+#julian {
+    background-image: url(http://www.voltagearc.com/userfiles/image/upload/member/Julian%2095_75%20sw.jpg)
+}
+
+#timon {
+    background-image: url(https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xfl1/t31.0-8/13220783_622061011285388_6310601690008438917_o.jpg);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.contact-teddy {
+    background-color: #424242;
 }
 
 
@@ -714,6 +788,34 @@ noscript {
         display: inline;
         text-decoration: none;
     }
+    .contact-text-container h1 {
+        font-size: 1.73em;
+    }
+    .social a svg {
+        height: 50px;
+        width: 50px;
+    }
+    .contact-image {
+        height: 50%;
+        width: 100%;
+        background-size: cover;
+    }
+    .contact-text-container {
+        box-sizing: border-box;
+        width: 100%;
+        height: 50%;
+        padding: 20px;
+        clear: both;
+    }
+    .contact_tab_container-teddy {
+        height: 550px;
+    }
+    .contact-teddy {
+        height: 550px;
+    }
+    .sectionExtended {
+        height: 700px;
+    }
 }
 
 
@@ -752,6 +854,32 @@ noscript {
     }
     .tabs a {
         line-height: 60px;
+    }
+    .contact-image,
+    .contact-text-container {
+        display: inline-block;
+    }
+    .contact-text-container h1 {
+        font-size: 1.4em;
+    }
+    .contact-image {
+        height: 100%;
+        width: 50%;
+        background-size: cover;
+        float: left
+    }
+    .contact-text-container {
+        box-sizing: border-box;
+        width: 50%;
+        height: 100%;
+        padding: 20px;
+        clear: both;
+    }
+    .contact_tab_container-teddy {
+        height: 350px;
+    }
+    .contact-teddy {
+        height: 100%;
     }
 }
 
@@ -796,6 +924,25 @@ noscript {
     .tabs1:hover,
     .tabs2:hover {
         border-bottom: 3px solid;
+    }
+    .contact-image,
+    .contact-text-container {
+        display: inline-block;
+    }
+    .contact-image {
+        height: 350px;
+        width: 50%;
+        background-size: cover;
+        float: left
+    }
+    .contact-text-container {
+        box-sizing: border-box;
+        width: 50%;
+        height: 350px;
+        padding: 20px;
+    }
+    .contact_tab_container-teddy {
+        350px;
     }
 }
 
