@@ -136,5 +136,12 @@ layout: main
     <!-- Page Four (Manager) -->
     <div id="page_four" class="main-area section">
         <h1>Contact</h1>
+        <div class="material_shadow contact_tab_container-teddy">
+            <div class="contact-teddy">
+                {% for manager in site.manager %}
+                <div class="contact-image" style="background-image:url({{manager.image}})"></div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </div>

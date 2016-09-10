@@ -677,24 +677,6 @@ noscript {
     font-weight: 400;
 }
 
-/*#tonimaccaroni {
-    background-image: url(http://www.voltagearc.com/userfiles/image/upload/member/Toni%2095_75%20sw.jpg)
-}*/
-
-#merlin {
-    background-image: url(http://www.voltagearc.com/userfiles/image/upload/member/Merlin%2095_75%20sw.jpg)
-}
-
-#julian {
-    background-image: url(http://www.voltagearc.com/userfiles/image/upload/member/Julian%2095_75%20sw.jpg)
-}
-
-#timon {
-    background-image: url(https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xfl1/t31.0-8/13220783_622061011285388_6310601690008438917_o.jpg);
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
-
 .contact-teddy {
     background-color: #424242;
 }
