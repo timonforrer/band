@@ -10,4 +10,4 @@ image: "/uploads/Teddy_sw.jpg"
 ## Beruflich
 * Kaufmännische Berufschule
 * 10 Jahre IT-Entwicklungsleiter
-* Seit 20 Jahren Geschäftsführer der [Fahnenfabrik Sevelen](http://http://www.fahnenfabrik.ch/)
+* Seit 20 Jahren Geschäftsführer der [Fahnenfabrik Sevelen](http://www.fahnenfabrik.ch/)
