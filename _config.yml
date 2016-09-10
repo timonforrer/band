@@ -53,6 +53,12 @@ defaults:
     link: ''
     state: ''
 - scope:
+    layout: manager
+    permalink: "/manager/:title"
+    function: ''
+    facebook_link: ''
+    mail_address: ''
+- scope:
     path: ''
     type: posts
   values:
