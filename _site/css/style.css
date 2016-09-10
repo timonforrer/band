@@ -605,9 +605,16 @@ footer h3 {
     margin-top: 3px;
 }
 
+footer span {
+    font-size: 11px;
+    font-weight: 300;
+}
+
 footer a {
-    font-size: 0.95em;
     color: #FF5252;
+}
+
+a.bottomline {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -667,6 +674,7 @@ noscript {
 
 .contact-text-container h4 {
     color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
 }
 
 /*#tonimaccaroni {
