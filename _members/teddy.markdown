@@ -1,6 +1,9 @@
 ---
 title: Teddy
 date: 2016-09-10 09:01:00 Z
+function: Manager
+facebook_link: https://www.facebook.com/Teddy.Beinwil
+mail_address: info@voltagearc.com
 ---
 
 Beruflich
