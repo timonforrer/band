@@ -53,6 +53,9 @@ defaults:
     link: ''
     state: ''
 - scope:
+    path: ''
+    type: managers
+  values:
     layout: manager
     permalink: "/manager/:title"
     function: ''
