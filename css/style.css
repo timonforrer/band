@@ -139,7 +139,8 @@ body {
 
 /* "Page" Height */
 
-.section {
+.section,
+.sectionExtended {
     height: 500px
 }
 
