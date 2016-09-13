@@ -56,8 +56,10 @@ layout: main
                         <th>Datum</th>
                     </tr>
                     {% assign events = site.events | where:"state","upcoming" %}
-                    {% if events == "" %}<p>no events upcoming</p>{% endif %}
-                    {% for event in events %}
+                    {% if event == null %}
+                    <p style="font-size:0.9em;font-weigth:300;font-family:'Lato';padding: 10px 0  0 10px;margin-top:0;">Keine bevorstehenden Veranstaltungen</p>
+                    {% endif %}
+                    {% for event in events limit:5 %}
                     <tr>
                         <td data-th="Anlass"><a href="{{event.link}}" target="_blank">{{ event.title }}</a></td>
                         <td data-th="Ort">{{ event.location }}</td>
@@ -74,7 +76,7 @@ layout: main
                         <th>Datum</th>
                     </tr>
                     {% assign events = site.events | where:"state","former" %}
-                    {% for event in events %}
+                    {% for event in events limit:5 %}
                     <tr>
                         <td data-th="Anlass"><a href="{{event.link}}" target="_blank">{{event.title}}</a></td>
                         <td data-th="Ort">{{event.location}}</td>
@@ -84,6 +86,7 @@ layout: main
                 </table>
             </div>
         </div>
+        <button class="btn" type="button"><a href="pages/events"><span>Alle Events</span></a></button>
     </div>
     
     <!-- Page Three (Band) -->
@@ -134,7 +137,7 @@ layout: main
     </div>
     
     <!-- Page Four (Manager) -->
-    <div id="page_four" class="main-area section">
+    <div id="page_four" class="main-area sectionExtended">
         <h1>Contact</h1>
         <div class="material_shadow contact_tab_container-teddy">
             <div class="contact-teddy">
