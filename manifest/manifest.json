@@ -5,7 +5,8 @@
   "version": "versionString",
   "default_locale": "de",
   "description": "Voltage Arcs New Band Web Page",
-  "icons": { "192": "icon192x192.png" },
+  "icons": { "144":"icon144x144.png",
+             "192":"icon192x192.png" },
   "start_url": "../index.html",
   "display": "standalone",
   "orientation": "portrait"
