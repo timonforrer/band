@@ -1,7 +1,7 @@
 ---
 title: Julian
 date: 2016-09-03 14:09:00 Z
-position: 1
+position: 2
 nickname: The J
 function: Bass
 facebook_link: https://www.facebook.com/julian.stein.509

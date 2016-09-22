@@ -1,7 +1,7 @@
 ---
 title: Merlin
 date: 2016-09-03 14:05:00 Z
-position: 2
+position: 1
 nickname: The Guitar-Wizzard v2 this is only a test, really
 function: Gitarre
 facebook_link: https://www.facebook.com/merlin.eichenberger
