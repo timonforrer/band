@@ -843,7 +843,7 @@ noscript {
         float: right;
         width: 215px;
         height: 65px;
-        background: url('../img/logo_215x65.png');
+        background: url('../uploads/logo_215x65.png');
     }
     .tabs {
         height: 60px;
@@ -913,7 +913,7 @@ noscript {
         float: right;
         height: 60px;
         width: 215px;
-        background-image: url('../img/logo_551x200.png');
+        background-image: url('../uploads/logo_551x200.png');
         background-size: contain;
         background-repeat: no-repeat;
     }
