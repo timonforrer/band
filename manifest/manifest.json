@@ -1,6 +1,10 @@
 {
+  "manifest_version": 2,
   "name": "Voltage Arc Web App",
   "short_name": "VoltageArc",
+  "version": "versionString",
+  "default_locale": "de",
+  "description": "Voltage Arcs New Band Web Page",
   "icons": [
     {
       "src": "icon36x36.png",
